@@ -1,10 +1,3 @@
-let color = '#3aa757';
-
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ color });
-  console.log('Default background color set to %cgreen', `color: ${color}`);
-});
-
 chrome.privacy.services.passwordSavingEnabled.get({}, function(details) {
   if (details.value) {
     console.log('Password is on!');
