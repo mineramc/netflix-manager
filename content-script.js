@@ -1,0 +1,11 @@
+console.log('on Netflix');
+var passwordField = document.getElementById("id_password");
+var usernameField = document.getElementById("id_userLoginId");
+var passwordContainer = document.querySelectorAll('[data-uia="password-field+container"]').item(0);
+var emailContainer = document.querySelectorAll('[data-uia="login-field+container"]').item(0);
+passwordContainer.setAttribute("class", "nfInput nfPasswordInput nfPasswordHasToggle login-input login-input-password");
+passwordField.setAttribute("value", "TEST555");
+passwordField.setAttribute("class", "nfTextField hasText");
+passwordContainer.setAttribute("class", "nfInput nfPasswordInput login-input login-input-password");
+usernameField.setAttribute("value", "TEST@TEST.com");
+usernameField.setAttribute("class", "nfTextField hasText");
